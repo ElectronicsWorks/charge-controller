@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"initi\startup_stm32f407xx.o"
+"initi\main.o"
+"initi\stm32f4xx_it.o"
+"initi\stm32f4xx_hal_msp.o"
+"initi\stm32f4xx_hal_adc.o"
+"initi\stm32f4xx_hal_adc_ex.o"
+"initi\stm32f4xx_hal_tim.o"
+"initi\stm32f4xx_hal_tim_ex.o"
+"initi\stm32f4xx_hal_uart.o"
+"initi\stm32f4xx_hal_rcc.o"
+"initi\stm32f4xx_hal_rcc_ex.o"
+"initi\stm32f4xx_hal_flash.o"
+"initi\stm32f4xx_hal_flash_ex.o"
+"initi\stm32f4xx_hal_flash_ramfunc.o"
+"initi\stm32f4xx_hal_gpio.o"
+"initi\stm32f4xx_hal_dma_ex.o"
+"initi\stm32f4xx_hal_dma.o"
+"initi\stm32f4xx_hal_pwr.o"
+"initi\stm32f4xx_hal_pwr_ex.o"
+"initi\stm32f4xx_hal_cortex.o"
+"initi\stm32f4xx_hal.o"
+"initi\system_stm32f4xx.o"
+--library_type=microlib --nodebug --strict --scatter "initi\initi.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "initi.map" -o initi\initi.axf
